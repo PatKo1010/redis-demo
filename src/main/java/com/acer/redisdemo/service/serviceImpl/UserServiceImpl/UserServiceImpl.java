@@ -14,7 +14,8 @@ import com.acer.redisdemo.service.UserService;
 public class UserServiceImpl implements UserService{
 	@Autowired
 	private UserRepository userDao;
-
+	
+	
 	@Override
 	public List<User> getAllUsers() {
 		return userDao.findAll();
@@ -30,6 +31,7 @@ public class UserServiceImpl implements UserService{
 	@Override
 	public void clearAllUserCache() {
 		// TODO Auto-generated method stub
+		
 		
 	}
 

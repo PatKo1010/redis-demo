@@ -12,7 +12,7 @@ import com.acer.redisdemo.service.UserService;
 
 @RestController
 @RequestMapping("/user")
-public class HelloController {
+public class UserController {
 	@Autowired
 	UserService userService; 
 
@@ -20,6 +20,7 @@ public class HelloController {
 	public List<User> index() {
 		return userService.getAllUsers();
 	}
+	
 	
 	
 	
